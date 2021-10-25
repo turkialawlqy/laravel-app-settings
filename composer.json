@@ -32,7 +32,7 @@
   },
   "autoload": {
     "psr-4": {
-      "QCod\\AppSettings\\": "src/"
+      "Turki\\AppSettings\\": "src/"
     },
     "files": [
       "src/helpers.php"
@@ -40,7 +40,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "QCod\\AppSettings\\Tests\\": "tests/"
+      "Turki\\AppSettings\\Tests\\": "tests/"
     }
   },
   "extra": {
