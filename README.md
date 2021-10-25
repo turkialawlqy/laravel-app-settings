@@ -1,11 +1,11 @@
 ## Laravel App Settings
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/qcod/laravel-app-settings.svg)](https://packagist.org/packages/qcod/laravel-app-settings)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/turkialawlqy/laravel-app-settings.svg)](https://packagist.org/packages/turkialawlqy/laravel-app-settings)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/qcod/laravel-app-settings/master.svg)](https://travis-ci.org/qcod/laravel-app-settings)
-[![Total Downloads](https://img.shields.io/packagist/dt/qcod/laravel-app-settings.svg)](https://packagist.org/packages/qcod/laravel-app-settings)
+[![Build Status](https://img.shields.io/travis/turkialawlqy/laravel-app-settings/master.svg)](https://travis-ci.org/turkialawlqy/laravel-app-settings)
+[![Total Downloads](https://img.shields.io/packagist/dt/turkialawlqy/laravel-app-settings.svg)](https://packagist.org/packages/turkialawlqy/laravel-app-settings)
 
-Use `qcod/laravel-app-settings` to add settings manager with UI in your Laravel app. It stores settings in the database and by default uses Bootstrap 4 for styling but you can configure it to work with any css system.
+Use `turkialawlqy/laravel-app-settings` to add settings manager with UI in your Laravel app. It stores settings in the database and by default uses Bootstrap 4 for styling but you can configure it to work with any css system.
 
 > All the settings saved in db are cached to improve performance by reducing sql query to zero.
 
@@ -14,7 +14,7 @@ Use `qcod/laravel-app-settings` to add settings manager with UI in your Laravel 
 **1** - You can install the package via composer:
 
 ```bash
-$ composer require qcod/laravel-app-settings
+$ composer require turkialawlqy/laravel-app-settings
 ```
 
 **2** - If you are installing on Laravel 5.4 or lower you will be needed to manually register Service Provider by adding it in `config/app.php` providers array and Facade in aliases arrays.
@@ -22,12 +22,12 @@ $ composer require qcod/laravel-app-settings
 ```php
 'providers' => [
     //...
-    QCod\AppSettings\AppSettingsServiceProvider::class,
+    turkialawlqy\AppSettings\AppSettingsServiceProvider::class,
 ]
 
 'aliases' => [
     //...
-    "AppSettings" => QCod\AppSettings\Facade::class
+    "AppSettings" => turkialawlqy\AppSettings\Facade::class
 ]
 ```
 
@@ -36,7 +36,7 @@ In Laravel 5.5 or above the service provider automatically get registered and a 
 **3** - Now you should publish the config file with:
 
 ```bash
-php artisan vendor:publish --provider="QCod\AppSettings\AppSettingsServiceProvider" --tag="config"
+php artisan vendor:publish --provider="turkialawlqy\AppSettings\AppSettingsServiceProvider" --tag="config"
 ```
 
 It will create [`config/app_settings.php`](#config-file) with all the configuration option and way to define your setting inputs divided into sections.
@@ -72,7 +72,7 @@ First you need to define all the settings you want in our settings page. For exa
                     'class' => 'form-control', // override global input_class
                     'style' => '', // any inline styles
                     'rules' => 'required|min:2|max:20', // validation rules for this input
-                    'value' => 'QCode', // any default value
+                    'value' => 'turkialawlqye', // any default value
                     'hint' => 'You can set the app name here' // help block text for input
                 ]
             ]
@@ -160,7 +160,7 @@ In this case you can have different settings for each user.
 
 ### Use without UI
 
-If you want to just store the key-value pair into DB and don't want the UI to manage settings for example in API? You should use [qcod/laravel-settings package](https://github.com/qcod/laravel-settings) instead. This package uses it under the hood to persist the settings.
+If you want to just store the key-value pair into DB and don't want the UI to manage settings for example in API? You should use [turkialawlqy/laravel-settings package](https://github.com/turkialawlqy/laravel-settings) instead. This package uses it under the hood to persist the settings.
 
 If you want to use both UI and settings as key-value pair in DB alongside, for that simply use the helper function `setting()` or `AppSetting::get('app_name')` to store and retrieve settings from DB. For this, you don't need to define any section and inputs in `app_settings.php` config.
 
@@ -234,7 +234,7 @@ These are literally the same things with just type change and `min` and `max` at
     'placeholder' => 'Application Name',
     'class' => 'form-control',
     'style' => 'color:red',
-    'value' => 'QCode',
+    'value' => 'turkialawlqye',
     'hint' => 'You can set the app name here'
 ],
 
@@ -465,7 +465,7 @@ If your app doesn't use Twitter Bootstrap 4 you can easily customize this in app
 In some case if your app needs custom views you can publish app settings view and then you can customize every part of the setting fields.
 
 ```bash
-php artisan vendor:publish --provider="QCod\AppSettings\AppSettingsServiceProvider" --tag="views"
+php artisan vendor:publish --provider="turkialawlqy\AppSettings\AppSettingsServiceProvider" --tag="views"
 ```
 
 ### Custom input type
@@ -611,7 +611,7 @@ Make sure you have `index()` and `store(Request $request)` method in your contro
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use QCod\AppSettings\SavesSettings;
+use turkialawlqy\AppSettings\SavesSettings;
 use App\Http\Controllers\Controller;
 
 class SettingsController extends Controller 
@@ -657,7 +657,7 @@ return [
                     'class' => 'form-control', // override global input_class
                     'style' => '', // any inline styles
                     'rules' => 'required|min:2|max:20', // validation rules for this input
-                    'value' => 'QCode', // any default value
+                    'value' => 'turkialawlqye', // any default value
                     'hint' => 'You can set the app name here' // help block text for input
                 ]
             ]
@@ -716,7 +716,7 @@ return [
     'remove_abandoned_settings' => false,
 
     // Controller to show and handle save setting
-    'controller' => '\QCod\AppSettings\Controllers\AppSettingController'
+    'controller' => '\turkialawlqy\AppSettings\Controllers\AppSettingController'
     
     // settings group
     'setting_group' => function() {
@@ -750,9 +750,9 @@ If you discover any security related issues, please email saquibweb@gmail.com in
 
 - [Mohd Saqueib Ansari](https://github.com/saqueib)
 
-### About QCode.in
+### About turkialawlqye.in
 
-QCode.in (https://www.qcode.in) is blog by [Saqueib](https://github.com/saqueib) which covers All about Full Stack Web Development.
+turkialawlqye.in (https://www.turkialawlqye.in) is blog by [Saqueib](https://github.com/saqueib) which covers All about Full Stack Web Development.
 
 ### License
 
