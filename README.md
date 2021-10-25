@@ -22,12 +22,12 @@ $ composer require turkialawlqy/laravel-app-settings
 ```php
 'providers' => [
     //...
-    turkialawlqy\AppSettings\AppSettingsServiceProvider::class,
+    Turki\AppSettings\AppSettingsServiceProvider::class,
 ]
 
 'aliases' => [
     //...
-    "AppSettings" => turkialawlqy\AppSettings\Facade::class
+    "AppSettings" => Turki\AppSettings\Facade::class
 ]
 ```
 
@@ -36,7 +36,7 @@ In Laravel 5.5 or above the service provider automatically get registered and a 
 **3** - Now you should publish the config file with:
 
 ```bash
-php artisan vendor:publish --provider="turkialawlqy\AppSettings\AppSettingsServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Turki\AppSettings\AppSettingsServiceProvider" --tag="config"
 ```
 
 It will create [`config/app_settings.php`](#config-file) with all the configuration option and way to define your setting inputs divided into sections.
