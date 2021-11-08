@@ -1,9 +1,9 @@
 <?php
 
-namespace Turki\AppSettings;
+namespace turkialawlqy\AppSettings;
 
 use Illuminate\Http\Request;
-use Turki\AppSettings\Setting\AppSettings;
+use turkialawlqy\AppSettings\Setting\AppSettings;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 
 trait SavesSettings

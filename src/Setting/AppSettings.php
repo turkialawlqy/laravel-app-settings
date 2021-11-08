@@ -1,12 +1,12 @@
 <?php
 
-namespace Turki\AppSettings\Setting;
+namespace turkialawlqy\AppSettings\Setting;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use Turki\Settings\Setting\SettingStorage;
+use turkialawlqy\Settings\Setting\SettingStorage;
 
 class AppSettings
 {

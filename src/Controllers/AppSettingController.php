@@ -1,9 +1,9 @@
 <?php
 
-namespace Turki\AppSettings\Controllers;
+namespace turkialawlqy\AppSettings\Controllers;
 
 use Illuminate\Routing\Controller;
-use Turki\AppSettings\SavesSettings;
+use turkialawlqy\AppSettings\SavesSettings;
 
 class AppSettingController extends Controller
 {

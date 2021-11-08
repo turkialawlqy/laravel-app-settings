@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to `Turki/laravel-app-settings` will be documented in this file
+All notable changes to `turkialawlqylaravel-app-settings` will be documented in this file
 
 ## 1.4.0 - 2020-09-24
 - Laravel 8 support
@@ -19,8 +19,8 @@ All notable changes to `Turki/laravel-app-settings` will be documented in this f
 ## 1.0.2 - 2018-10-10
 
 Package has been split into two parts
-- `Turki/laravel-app-settings` which keeps the current API without any breaking changes and
-- `Turki/laravel-settings` to store a key-value pair in the database
+- `turkialawlqylaravel-app-settings` which keeps the current API without any breaking changes and
+- `turkialawlqylaravel-settings` to store a key-value pair in the database
 
 ## 1.0.1 - 2018-10-07
 

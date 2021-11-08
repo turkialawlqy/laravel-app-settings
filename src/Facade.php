@@ -1,6 +1,6 @@
 <?php
 
-namespace Turki\AppSettings;
+namespace turkialawlqy\AppSettings;
 
 class Facade extends \Illuminate\Support\Facades\Facade
 {

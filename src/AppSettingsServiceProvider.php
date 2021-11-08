@@ -1,9 +1,9 @@
 <?php
 
-namespace Turki\AppSettings;
+namespace turkialawlqy\AppSettings;
 
 use Illuminate\Support\ServiceProvider;
-use Turki\AppSettings\Setting\AppSettings;
+use turkialawlqy\AppSettings\Setting\AppSettings;
 
 class AppSettingsServiceProvider extends ServiceProvider
 {
@@ -43,11 +43,11 @@ class AppSettingsServiceProvider extends ServiceProvider
     public function register()
     {
         // register setting service provider
-        $this->app->register('Turki\Settings\SettingsServiceProvider');
+        $this->app->register('turkialawlqy\Settings\SettingsServiceProvider');
 
         // bind app settings
         $this->app->singleton('app-settings', function ($app) {
-            return new AppSettings($app->make('Turki\Settings\Setting\SettingStorage'));
+            return new AppSettings($app->make('turkialawlqy\Settings\Setting\SettingStorage'));
         });
     }
 }
