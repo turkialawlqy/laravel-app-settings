@@ -14,7 +14,7 @@ Use `turkialawlqy/laravel-app-settings` to add settings manager with UI in your 
 **1** - You can install the package via composer:
 
 ```bash
-$ composer require turkialawlqy//laravel-app-settings
+$ composer require turkialawlqy/laravel-app-settings
 ```
 
 **2** - If you are installing on Laravel 5.4 or lower you will be needed to manually register Service Provider by adding it in `config/app.php` providers array and Facade in aliases arrays.
