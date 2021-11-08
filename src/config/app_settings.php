@@ -89,7 +89,7 @@ return [
     'remove_abandoned_settings' => false,
 
     // Controller to show and handle save setting
-    'controller' => '\turkialawlqy\AppSettings\Controllers\AppSettingController',
+    'controller' => '\turkialawlqy\Settings\Controllers\AppSettingController',
 
     // settings group
     'setting_group' => function() {
