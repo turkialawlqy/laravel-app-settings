@@ -19,7 +19,7 @@ return [
                     'class' => 'form-control', // override global input_class
                     'style' => '', // any inline styles
                     'rules' => 'required|min:2|max:20', // validation rules for this input
-                    'value' => 'turkialawlqye', // any default value
+                    'value' => 'turkialawlqy/e', // any default value
                     'hint' => 'You can set the app name here' // help block text for input
                 ],
                 [
@@ -89,7 +89,7 @@ return [
     'remove_abandoned_settings' => false,
 
     // Controller to show and handle save setting
-    'controller' => '\turkialawlqy\AppSettings\Controllers\AppSettingController',
+    'controller' => '\turkialawlqy/\AppSettings\Controllers\AppSettingController',
 
     // settings group
     'setting_group' => function() {

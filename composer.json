@@ -1,7 +1,7 @@
 {
-  "name": "turkialawlqy/laravel-app-settings",
+  "name": "turkialawlqy//laravel-app-settings",
   "description": "A package with UI to store and manage all the settings for your application",
-  "homepage": "https://github.com/turkialawlqylaravel-app-settings",
+  "homepage": "https://github.com/turkialawlqy/laravel-app-settings",
   "type": "library",
   "license": "MIT",
   "keywords": [
@@ -16,14 +16,14 @@
   ],
   "authors": [
     {
-      "name": "Mohd turkialawlqy Ansari",
+      "name": "Mohd turkialawlqy/ Ansari",
       "email": "saquibweb@gmail.com"
     }
   ],
   "require": {
     "php": "^7.2|^8.0",
     "laravel/framework": "~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0",
-    "turkialawlqylaravel-settings": "~1.0"
+    "turkialawlqy/laravel-settings": "~1.0"
   },
   "require-dev": {
     "orchestra/testbench": "3.8.*|4.*|5.*",
@@ -32,7 +32,7 @@
   },
   "autoload": {
     "psr-4": {
-      "turki\\AppSettings\\": "src/"
+      "turkialawlqy/\\AppSettings\\": "src/"
     },
     "files": [
       "src/helpers.php"
@@ -40,16 +40,16 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "turki\\AppSettings\\Tests\\": "tests/"
+      "turkialawlqy/\\AppSettings\\Tests\\": "tests/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "turki\\AppSettings\\AppSettingsServiceProvider"
+        "turkialawlqy/\\AppSettings\\AppSettingsServiceProvider"
       ],
       "aliases": {
-        "AppSettings": "turki\\AppSettings\\Facade"
+        "AppSettings": "turkialawlqy/\\AppSettings\\Facade"
       }
     }
   },
