@@ -2,9 +2,9 @@
     <div class="checkbox">
         <label>
             <input name="{{ $field['name'] }}" value="{{ Arr::get($field, 'value', '1') }}" type="checkbox" @if(old($field['name'], \setting($field['name']))) checked="checked" @endif >
-            {{ $field['label'] }}
+            {{ __($field['label']) }}
         </label>
 
-        @if ($errors->has($field['name'])) <small class="help-block">{{ $errors->first($field['name']) }}</small> @endif
+        @if ($errors->has($field['name'])) <small class="help-block">{{ __($errors->first($field['name'])) }}</small> @endif
     </div>
 </div>

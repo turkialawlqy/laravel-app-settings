@@ -1,5 +1,5 @@
 @php
-        $fieldName = isset($field['multiple']) ? $field['name'].'[]' : $field['name'];
+        $fieldName = isset($field['multi']) ? $field['name'].'[]' : $field['name'];
 @endphp
 
 <select name="{{ $fieldName }}"
@@ -9,7 +9,7 @@
         id="{{ $field['name'] }}">
     @foreach(Arr::get($field, 'options', []) as $val => $label)
         <option value="{{ $val }}" @if( old($field['name'], \setting($field['name'])) == $val ) selected @endif>
-                {{ $label }}
+                {{ __($label) }}
         </option>
     @endforeach
 </select>

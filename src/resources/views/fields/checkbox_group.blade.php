@@ -3,10 +3,10 @@
     @include('app_settings::fields._description', ['field' => $field])
 
     <div class="checkbox">
-        @foreach($field['options'] as $option)
+        @foreach($field['options'] as $k => $option)
             <div>
                 @php
-                    $checkbox_value = Arr::get($option, 'value', $option, []);
+                    $checkbox_value = Arr::get($k, 'value', $k, []);
                     $checkbox_label = Arr::get($option, 'label', $option, []);
                     $current_value = old($field['name'], \setting($field['name'], []));
                 @endphp
@@ -17,7 +17,7 @@
                         value="{{ $checkbox_value }}"
                         class="{{ Arr::get( $field, 'class') }}"
                         type="checkbox">
-                    {{ $checkbox_label }}
+                    {{ __($checkbox_label) }}
                 </label>
             </div>
         @endforeach

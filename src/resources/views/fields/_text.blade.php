@@ -3,7 +3,7 @@
     <input type="{{ $field['type'] }}"
            name="{{ $field['name'] }}"
            @if( $placeholder = Arr::get($field, 'placeholder') )
-           placeholder="{{ $placeholder }}"
+           placeholder="{{ __($placeholder) }}"
            @endif
            value="{{ old($field['name'], \setting($field['name'])) }}"
            class="{{ Arr::get( $field, 'class', config('app_settings.input_class', 'form-control')) }} {{ $errors->has($field['name']) ? config('app_settings.input_invalid_class', 'is-invalid') : '' }}"
@@ -14,7 +14,7 @@
     >
 
     @if( $append = Arr::get($field, 'append'))
-        <span>{{ $append }}</span>
+        <span>{{ __($append) }}</span>
     @endif
 
 @endcomponent

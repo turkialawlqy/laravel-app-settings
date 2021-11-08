@@ -1,4 +1,4 @@
-@extends('app_settings::layout')
+@extends('layouts.admin')
 
 @section('content')
     @include('app_settings::_settings')

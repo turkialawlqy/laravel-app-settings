@@ -3,7 +3,7 @@
     <textarea type="{{ $field['type'] }}"
               name="{{ $field['name'] }}"
               @if( $placeholder = Arr::get($field, 'placeholder') )
-              placeholder="{{ $placeholder }}"
+              placeholder="{{ __($placeholder) }}"
               @endif
               @if( $rows = Arr::get($field, 'rows') )
               rows="{{ $rows }}"
