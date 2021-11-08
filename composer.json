@@ -1,5 +1,5 @@
 {
-  "name": "turkialawlqy//laravel-app-settings",
+  "name": "turkialawlqy/laravel-app-settings",
   "description": "A package with UI to store and manage all the settings for your application",
   "homepage": "https://github.com/turkialawlqy/laravel-app-settings",
   "type": "library",
@@ -16,8 +16,8 @@
   ],
   "authors": [
     {
-      "name": "Mohd turkialawlqy/ Ansari",
-      "email": "saquibweb@gmail.com"
+      "name": "turkialawlqy",
+      "email": "turkialawlqy@gmail.com"
     }
   ],
   "require": {
@@ -32,7 +32,7 @@
   },
   "autoload": {
     "psr-4": {
-      "turkialawlqy/\\AppSettings\\": "src/"
+      "turkialawlqy\\AppSettings\\": "src/"
     },
     "files": [
       "src/helpers.php"
@@ -40,16 +40,16 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "turkialawlqy/\\AppSettings\\Tests\\": "tests/"
+      "turkialawlqy\\AppSettings\\Tests\\": "tests/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "turkialawlqy/\\AppSettings\\AppSettingsServiceProvider"
+        "turkialawlqy\\AppSettings\\AppSettingsServiceProvider"
       ],
       "aliases": {
-        "AppSettings": "turkialawlqy/\\AppSettings\\Facade"
+        "AppSettings": "turkialawlqy\\AppSettings\\Facade"
       }
     }
   },

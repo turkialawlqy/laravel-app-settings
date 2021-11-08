@@ -465,7 +465,7 @@ If your app doesn't use Twitter Bootstrap 4 you can easily customize this in app
 In some case if your app needs custom views you can publish app settings view and then you can customize every part of the setting fields.
 
 ```bash
-php artisan vendor:publish --provider="turkialawlqy/\AppSettings\AppSettingsServiceProvider" --tag="views"
+php artisan vendor:publish --provider="turkialawlqy\AppSettings\AppSettingsServiceProvider" --tag="views"
 ```
 
 ### Custom input type
@@ -611,7 +611,7 @@ Make sure you have `index()` and `store(Request $request)` method in your contro
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use turkialawlqy/\AppSettings\SavesSettings;
+use turkialawlqy\AppSettings\SavesSettings;
 use App\Http\Controllers\Controller;
 
 class SettingsController extends Controller 
@@ -716,7 +716,7 @@ return [
     'remove_abandoned_settings' => false,
 
     // Controller to show and handle save setting
-    'controller' => '\turkialawlqy/\AppSettings\Controllers\AppSettingController'
+    'controller' => '\turkialawlqy\AppSettings\Controllers\AppSettingController'
     
     // settings group
     'setting_group' => function() {
