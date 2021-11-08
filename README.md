@@ -750,9 +750,6 @@ If you discover any security related issues, please email saquibweb@gmail.com in
 
 - [Mohd turkialawlqy/ Ansari](https://github.com/turkialawlqy/)
 
-### About turkie.in
-
-turkie.in (https://www.turkie.in) is blog by [turkialawlqy/](https://github.com/turkialawlqy/) which covers All about Full Stack Web Development.
 
 ### License
 
